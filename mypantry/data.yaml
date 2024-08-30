@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 67
+names: ['almond butter', 'apple', 'avocado', 'bacon', 'baking soda', 'balsamic vinaigrette', 'balsamic vinegar', 'barbecue sauce', 'basil pesto', 'beans', 'black beans', 'black pepper', 'brown onion', 'buffalo sauce', 'butter', 'cajun', 'canola oil', 'cayenne pepper', 'cheese', 'chicken', 'chicken stock', 'chickpeas', 'cinnamon', 'coffee', 'cucumber', 'cumin', 'garlic', 'ginger', 'gnocchi', 'grapes', 'hoison sauce', 'honey', 'hot sauce', 'italian herbs', 'jalapeno', 'ketchup', 'kiwi', 'kumara', 'laksa paste', 'lemon', 'lime juice', 'muesli bars', 'mustard', 'noodles', 'olive oil', 'onion powder', 'orange', 'oregano', 'paprika', 'red onion', 'red wine vinegar', 'rice', 'salad', 'salmon', 'salsa', 'salt', 'sesame oil', 'soy sauce', 'sriracha', 'sweet chili sauce', 'syrup', 'tartare sauce', 'tomato', 'tomato puree', 'tomato sauce', 'vanilla', 'vegetable oil']
+
+roboflow:
+  workspace: grocery-dataset-mx63k
+  project: recipe-ingredients-c7y4n
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/grocery-dataset-mx63k/recipe-ingredients-c7y4n/dataset/1
