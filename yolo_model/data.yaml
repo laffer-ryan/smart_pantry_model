@@ -1,0 +1,110 @@
+names:
+  0: almond butter
+  1: apple
+  2: avocado
+  3: bacon
+  4: baking soda
+  5: balsamic vinaigrette
+  6: balsamic vinegar
+  7: barbecue sauce
+  8: basil
+  9: basil pesto
+  10: beans
+  11: bitter gaurd
+  12: black beans
+  13: black pepper
+  14: bread
+  15: bringal
+  16: brown onion
+  17: buffalo sauce
+  18: butter
+  19: cabbage
+  20: cajun
+  21: cake
+  22: candy
+  23: canola oil
+  24: capsicum
+  25: carrots
+  26: cauliflower
+  27: cayenne pepper
+  28: cereal
+  29: cheese
+  30: chicken
+  31: chicken stock
+  32: chickpeas
+  33: chillies
+  34: chips
+  35: chocolate
+  36: cinnamon
+  37: coffee
+  38: coriander
+  39: corn
+  40: cucumber
+  41: cumin
+  42: egg
+  43: fish
+  44: flour
+  45: garlic
+  46: ginger
+  47: gnocchi
+  48: grapes
+  49: hoison sauce
+  50: honey
+  51: hot sauce
+  52: italian herbs
+  53: jalapeno
+  54: jam
+  55: juice
+  56: ketchup
+  57: kiwi
+  58: kumara
+  59: laksa paste
+  60: lemon
+  61: lettuce
+  62: lime juice
+  63: milk
+  64: muesli bars
+  65: mustard
+  66: noodles
+  67: nuts
+  68: oil
+  69: okra
+  70: olive oil
+  71: onion
+  72: onion powder
+  73: orange
+  74: oregano
+  75: paprika
+  76: pasta
+  77: potato
+  78: pumpkin
+  79: red onion
+  80: red wine vinegar
+  81: rice
+  82: salad
+  83: salmon
+  84: salsa
+  85: salt
+  86: sesame oil
+  87: soda
+  88: soy sauce
+  89: spices
+  90: sriracha
+  91: sugar
+  92: sweet chili sauce
+  93: syrup
+  94: tartare sauce
+  95: tea
+  96: tomato
+  97: tomato puree
+  98: tomato sauce
+  99: tomato_sauce
+  100: vanilla
+  101: vegetable oil
+  102: vinegar
+  103: water
+  104: watermelon
+nc: 105
+test: ../test/images
+train: ../train/images
+val: ../valid/images
