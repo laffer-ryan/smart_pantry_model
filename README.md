@@ -1,0 +1,1 @@
+# smart_pantry_model
