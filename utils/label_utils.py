@@ -3,8 +3,6 @@
 import os
 import yaml
 from typing import List, Dict
-import pandas as pd
-from pprint import pprint
 
 
 def get_labelfile_data(label_filepath: str):
@@ -30,10 +28,8 @@ def update_yolo_label_file(label_file_path, label_mapping):
         label_mapping (dict): Mapping of old class indices to new class indices.
     """
     updated_lines = []
-    print(f'File Path: {label_file_path}')
     with open(label_file_path, 'r') as file:
         lines = file.readlines()
-    pprint(f'Old File: \n {lines}')
     for line in lines:
         parts = line.strip().split()
         old_class_idx = int(parts[0])
@@ -51,8 +47,22 @@ def update_yolo_label_file(label_file_path, label_mapping):
     return updated_lines
 
 
+def write_label_files(txt_file: str, output_file_path: str) -> None:
+    """
+    Write label files to output directory.
+    
+    Args:
+        txt_file (str): Line from updated text file.
+        output_file_path (str): path to the output file 
+    """
+    # Write the updated lines back to the file
+    with open(output_file_path, 'w') as file:
+        file.write("\n".join(txt_file) + "\n")
+    
+    return None
 
-
-    # # Write the updated lines back to the file
-    # with open(label_file_path, 'w') as file:
-    #     file.write("\n".join(updated_lines) + "\n")
+def update_bbox_dims():
+    """
+    Should be used to update bbox dimensions based on scale provided by images_util.scale_images
+    """
+    pass
