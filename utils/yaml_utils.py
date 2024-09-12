@@ -55,20 +55,6 @@ def create_label_mapping(old_classes: Dict[int, str], new_classes: Dict[int, str
             print(f"Warning: {old_class} not found in new_classes")
     return label_mapping
 
-# def create_label_mapping(label_mapping: Dict[int, str], label_file: Dict[int, str]) -> None:
-#     """
-#     Update label files with new mapping 
-    
-#     Args:
-#         label_mapping Dict[int, str]: Dictionary map of key: value (old_value: new_value).
-    
-#     Returns:
-#         None: Converts label file to correct mapping.
-#     """
-
-#     pass
-
-
 
 
 def main():

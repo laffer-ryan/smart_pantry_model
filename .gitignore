@@ -129,6 +129,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.env.yolo
 
 # Spyder project settings
 .spyderproject
@@ -166,3 +167,10 @@ data/freiburg-groceries
 data/Ingredient_Detection
 data/mypantry
 eda
+args.yaml
+data
+/yolo_model/
+*.db
+*.jpg
+*.txt
+weights

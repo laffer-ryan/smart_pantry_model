@@ -10,9 +10,9 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Script variables
-freiburg_dir = os.getenv('FREIBURG_DIR')
+freiburg_dir = os.getenv('MYPANTRY_DIR')
 sub_dirs = ['test', 'train', 'valid']
-classes_to_remove = ('BEANS', 'OIL', 'VINEGAR', 'SPICES')
+classes_to_remove = ('sauce', 'sausage', 'sausages')
 
 def process_directories(img_lbl_dirs_path: str, classes: Tuple[str, ...]) -> None:
     """

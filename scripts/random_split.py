@@ -50,8 +50,15 @@ def copy_files(data: List[Tuple[str, str]], split_dir: str):
         label_dest = os.path.join(split_dir, 'labels', os.path.basename(label_path))
         
         if image_path != image_dest:
-            shutil.copy(image_path, image_dest)
-            shutil.copy(label_path, label_dest)
+            try:
+                # Copy file to destination
+                shutil.copy(image_path, image_dest)
+                shutil.copy(label_path, label_dest)
+                print(f"Copied: {label_path} to {label_dest}")
+            except FileNotFoundError as e:
+                print(f"Error copying file {label_path}: {e}")
+            except Exception as e:
+                print(f"Unexpected error copying file {label_path}: {e}")
             add_count += 1
         else:
             skipped_count += 1
@@ -67,7 +74,7 @@ def main():
     
     image_label_pairs = get_image_label_pairs(images_dir)
     
-    train_data, valid_data, test_data = split_dataset(image_label_pairs, train_pct=0.7, valid_pct=0.2, seed=42)
+    train_data, valid_data, test_data = split_dataset(image_label_pairs, train_pct=0.80, valid_pct=0.15, seed=123)
     
     copy_files(train_data, os.path.join(model_dir, 'train'))
     copy_files(valid_data, os.path.join(model_dir, 'valid'))
